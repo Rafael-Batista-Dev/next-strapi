@@ -2,7 +2,8 @@
   "collectionName": "components_page_text_blogs",
   "info": {
     "name": "text-blog",
-    "icon": "align-justify"
+    "icon": "align-justify",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -13,7 +14,7 @@
       "type": "richtext"
     },
     "imagens": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images"

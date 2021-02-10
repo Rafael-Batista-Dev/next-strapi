@@ -11,6 +11,30 @@ function Home({ home }) {
     <>
       <Header />
       <Conteudo />
+      <div>
+        <hr />
+        <h1>
+          {
+            home.body.find((item) => item.__component === "page.text-blog")
+              .title
+          }
+        </h1>
+        <hr />
+        <ul>
+          {home.body
+            .find((item) => item.__component === "page.value")
+            .values.map((value) => (
+              <li key={value.id}>
+                <h2>{value.title}</h2>
+                <p>{value.content}</p>
+
+                <hr />
+              </li>
+            ))}
+        </ul>
+        {/*
+         */}
+      </div>
       <Sobre />
     </>
   );

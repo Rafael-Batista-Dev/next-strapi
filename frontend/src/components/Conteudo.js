@@ -1,7 +1,9 @@
 function Conteudo() {
   return (
     <>
-      <h1>Conteúdo</h1>
+      <div>
+        <h1>Conteúdo</h1>
+      </div>
     </>
   );
 }
